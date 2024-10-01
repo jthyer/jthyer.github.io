@@ -74,6 +74,10 @@ hr {
     margin-left: 0px;
     width: 75%;
   }  
+
+  #header {
+    font-size: 20px;
+  }
  
   #wrapper {
     width: 100%;
