@@ -1,0 +1,11 @@
+      <div id="header">    
+        <img src="images/FarAwayTimesLogo.png" />
+        <br />
+        <span id="current">Website</span> | <a href="https://farawaytimes.itch.io/">Itch.io</a> | <a href="https://farawaytimes.blogspot.com/">Blog</a>
+      </div>
+      <hr />
+      <div id="subheader">
+        <span id="current">Home</span> | <a href="">About Me</a> | <a href="">Art I Like</a> | <a href="">Fiction</a> | <a href="">Media Lists</a> | <a href="">Bulk Downloads</a> | <a href="">Links</a>
+      </div>
+   
+    
