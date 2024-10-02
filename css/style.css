@@ -12,6 +12,10 @@ body {
   line-height: 150%;
 }
 
+h2, h3 {
+  display: inline;
+}
+
 a {
   color: #734918;
 }
@@ -61,10 +65,35 @@ hr {
   margin: 0 auto;
 }
 
+/*
 #footer {
   color: #333;
   font-size: 50%;
   margin-top:24px;
+}
+*/
+
+#add-margin {
+  margin-top:22px;
+}
+
+#remove-margin {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#increase-line-height {
+  line-height: 200%;
+}
+
+#small-font {
+  font-size: 80%;
+  line-height:200%;
+  vertical-align: middle;
+}
+
+#hide-on-desktop {
+  display: none;
 }
 
 /* Mobile Styling */
@@ -81,5 +110,13 @@ hr {
  
   #wrapper {
     width: 100%;
+  }
+
+  #hide-on-desktop {
+    display: inline;
+  }
+
+  #increase-line-height {
+    line-height: 150%;
   }
 }
