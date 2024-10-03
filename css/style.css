@@ -73,6 +73,17 @@ hr {
 }
 */
 
+
+  .responsive-two-column-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+} 
+
+.responsive-two-column-grid > * {
+  padding:1rem;
+}
+
 #add-margin {
   margin-top:22px;
 }
@@ -119,4 +130,10 @@ hr {
   #increase-line-height {
     line-height: 150%;
   }
+  
+.responsive-two-column-grid {
+  display: block;
+}
+
+
 }
