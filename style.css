@@ -38,8 +38,6 @@ hr {
 
 #header img {
 	margin-top: 20px;
-	margin-bottom: 16px;
-	margin-left: 70px;
 }
 
 #subheader {
@@ -64,22 +62,31 @@ hr {
 #content {
 	width: 90%;
 	margin: 0 auto;
+  margin-top: 22px;
 }
 
+#feed-embeds {
+  width: 80%;
+  margin: 0 auto;
+  border-style: inset;
+  background-color: #ddd;
+  padding: 20px;
+  margin-top: 25px;
+}
 
+#rss-feed a {
+  display: none;
+}
 
-/*
+#rss-feed h4 a {
+  display: block;
+}
+
 #footer {
-  color: #333;
-  font-size: 50%;
-  margin-top:24px;
+  text-align: center;
 }
-*/
 
-
-
-
-  .responsive-two-column-grid {
+.responsive-two-column-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	text-align: center;
@@ -96,6 +103,11 @@ hr {
 #remove-margin {
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+
+#big-margin {
+  width:75%;
+  margin: 0 auto;
 }
 
 #increase-line-height {
@@ -138,6 +150,10 @@ hr {
 
 #increase-line-height {
 	line-height: 150%;
+}
+
+#big-margin {
+  width:100%;
 }
 
 .responsive-two-column-grid {
