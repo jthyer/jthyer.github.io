@@ -1,73 +1,74 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Far Away Times - Home</title>
-		<link href="style.css" rel="stylesheet" type="text/css" media="all">
-	</head>
-	<body>
-		<div id="wrapper">
-			<div id="header">
-				<img src="images/FarAwayTimesLogo.png">
-			</div>
-			<div id="subheader">
-				<span id="current">Home</span>
-				|
-				<a href="about.html">About Me</a>
-				|
-				<a href="art.html">Art I Like</a>
-				|<br id="hide-on-desktop">
-				<a href="challenge.html">Challenge Runs</a>
-				|
-				<a href="links.html">Links</a>
-			</div>
-			<hr>
-			<div id="content">
-				<p>I'm John Thyer. Welcome to my website! There's stuff here for you to read and click on — how novel!</p>
-				<p>If you want to play my games, visit
-					<a href="https://farawaytimes.itch.io/">my itch page</a>.</p>
-				<p>If you want to read my writing and keep up with what I've been up to, visit
-					<a href="https://farawaytimes.blogspot.com/">my blog</a>.</p>
-				<p>You can also follow me on
-					<a href="https://mastodon.social/@farawaythyer">Mastodon</a>
-					and
-					<a href="x.com/farawaythyer">Twitter</a>!
-				</p>
-				<div id="feed-embeds">
-					<h3>Latest Blog Posts</h3>
-					(<a href="https://farawaytimes.blogspot.com/feeds/posts/default">RSS</a>)
-					<div id="rss-feed">
-						<script src="//rss.bloople.net/?url=https%3A%2F%2Ffarawaytimes.blogspot.com%2Ffeeds%2Fposts%2Fdefault&amp;detail=-1&amp;limit=5&amp;showtitle=false&amp;type=js"></script>
-					</div>
-					<p>
-						<a href="https://farawaytimes.blogspot.com">More posts →</a>
-						<span style="float: right;">
-							<a id="small-font" href="https://rss.bloople.net/">Powered by RSS 2 HTML</a>
-						</span>
-					</p>
-				</div>
-				<div id="feed-embeds">
-					<h3>Latest Itch Releases</h3>
-					(<a href="https://itch.io/games/newest/by-farawaytimes.xml">RSS</a>)
-					<div id="rss-feed">
-						<script src="//rss.bloople.net/?url=https%3A%2F%2Fitch.io%2Fgames%2Fnewest%2Fby-farawaytimes.xml&amp;detail=-1&amp;limit=5&amp;showtitle=false&amp;type=js"></script>
-					</div>
-					<p>
-						<a href="https://farawaytimes.itch.io">More games →</a>
-						<span style="float: right;">
-							<a id="small-font" href="https://rss.bloople.net/">Powered by RSS 2 HTML</a>
-						</span>
-					</p>
-				</div>
-			</div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Far Away Times - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <img src="images/FarAwayTimesLogo.png">
+      </div>
+      <div id="subheader">
+        <span id="current">Home</span> | <a href="about.html">About Me</a> | <a href="art.html">Art I Like</a> | <br id="hide-on-desktop">
+        <a href="challenge.html">Challenge Runs</a> | <a href="links.html">Links</a>
+      </div>
+      <hr>
+      <div id="content">
+        <div class="home-two-column-grid">
+          <div style="padding-bottom:1rem;">I'm John Thyer. Welcome to my website! There's stuff here for you to read and click on — how novel! <p>If you want to play my games, visit <a href="https://farawaytimes.itch.io/">my itch page</a>. </p>
+            <p>If you want to read my writing and keep up with what I've been up to, visit <a href="https://farawaytimes.blogspot.com/">my blog</a>. </p> You can also follow me on <a href="https://mastodon.social/@farawaythyer">Mastodon</a> and <a href="x.com/farawaythyer">Twitter</a>! <br />
+          </div>
+          <div class="project-progress">
+            <h3>Projects Progress</h3>
+            <p>Mystery Twine Playtesting (60%)</p>
+            <div class="progress-container">
+              <div class="progress" style="width: 60%;"></div>
+            </div>
+            <p>Vextro 2024 Jam Entry Release-ready (95%)</p>
+            <div class="progress-container">
+              <div class="progress" style="width: 95%;"></div>
+            </div>
+            <p>
+              <i>Windswept Isle</i> NPCs and Interiors (15%)
+            </p>
+            <div class="progress-container">
+              <div class="progress" style="width: 15%;"></div>
+            </div>
+          </div>
+        </div>
+        <div id="feed-embeds">
+          <h3>Latest Blog Posts</h3> ( <a href="https://farawaytimes.blogspot.com/feeds/posts/default">RSS</a>) <div id="rss-feed">
+            <script src="//rss.bloople.net/?url=https%3A%2F%2Ffarawaytimes.blogspot.com%2Ffeeds%2Fposts%2Fdefault&amp;detail=-1&amp;limit=5&amp;showtitle=false&amp;type=js"></script>
+          </div>
+          <p>
+            <a href="https://farawaytimes.blogspot.com">More posts →</a>
+            <span style="float: right;">
+              <a id="small-font" href="https://rss.bloople.net/">Powered by RSS 2 HTML</a>
+            </span>
+          </p>
+        </div>
+        <div id="feed-embeds">
+          <h3>Latest Itch Releases</h3> ( <a href="https://itch.io/games/newest/by-farawaytimes.xml">RSS</a>) <div id="rss-feed">
+            <script src="//rss.bloople.net/?url=https%3A%2F%2Fitch.io%2Fgames%2Fnewest%2Fby-farawaytimes.xml&amp;detail=-1&amp;limit=5&amp;showtitle=false&amp;type=js"></script>
+          </div>
+          <p>
+            <a href="https://farawaytimes.itch.io">More games →</a>
+            <span style="float: right;">
+              <a id="small-font" href="https://rss.bloople.net/">Powered by RSS 2 HTML</a>
+            </span>
+          </p>
+        </div>
+      </div>
+      <br />
+      <div id="footer">
+        <a href="#header">↑</a>
         <br />
-			<div id="footer">
-				<a href="#header">↑</a>
+        <hr>
         <br />
-				<hr>
-        <br />
-			</div>
-		</div>
-	</body>
+      </div>
+    </div>
+  </body>
 </html>
