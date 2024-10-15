@@ -20,6 +20,11 @@ h2, h3 {
 
 a {
 	color: #734918;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 hr {
