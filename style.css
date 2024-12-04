@@ -146,12 +146,11 @@ div .progress {
 }
 
 #increase-line-height {
-	line-height: 200%;
+	/*line-height: 200%;*/
 }
 
 #small-font {
 	font-size: 80%;
-	line-height: 200%;
 	vertical-align: middle;
 }
 
@@ -159,7 +158,13 @@ div .progress {
 	display: none;
 }
 
+li {
+  margin-top: 10px;
+}
 
+a:hover {
+  text-decoration-style: solid;
+}
 
 /* Mobile Styling */
 
