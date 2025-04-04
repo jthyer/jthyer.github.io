@@ -1,0 +1,309 @@
+title Kit's Cookies
+author John Thyer
+noaction
+
+========
+OBJECTS
+========
+
+(Main Game Assets)
+
+Background
+gray 
+00000
+00000
+00000
+00000
+00000
+
+PanLeft
+darkbrown
+...00
+...00
+...00
+...00
+...00
+
+PanRight
+darkbrown
+00...
+00...
+00...
+00...
+00...
+
+Wall
+orange brown 
+00000
+00111
+00000
+00000
+11001
+
+PlayerL
+pink lightblue  white brown
+311.2
+33122
+0012.
+000..
+.33..
+
+PlayerR
+pink lightblue  white brown
+2.113
+22133
+.2100
+..000
+..33.
+
+Cookie1
+yellow brown
+.000.
+01000
+00010
+00100
+.000.
+
+Cookie2
+yellow brown
+.000.
+00000
+00000
+00000
+.000.
+
+
+
+Baked1
+brown darkbrown
+.000.
+01000
+00010
+00100
+.000.
+
+Baked2
+brown 
+.000.
+00000
+00000
+00000
+.000.
+
+(Ending Assets)
+
+Kit
+pink lightblue  white brown
+2.113
+22133
+.2100
+..000
+..33.
+
+Kat
+blue green white #ebcb99
+311.2
+33122
+0012.
+000..
+.33..
+
+KatEnd
+blue green white #ebcb99
+311.2
+33122
+0012.
+000..
+.33..
+
+Black
+orange
+00000
+00000
+00000
+00000
+00000
+
+BlackWall
+orange
+00000
+00000
+00000
+00000
+00000
+
+=======
+LEGEND
+=======
+
+(Main Game Assets)
+. = Background
+# = Wall
+P = PlayerL
+* = Cookie1
+& = Cookie2
+q = Baked1
+w = Baked2
+L = Wall and PanLeft
+R = Wall and PanRight
+
+(Ending Assets)
+, = Black
+n = Baked1 and Black
+m = Baked2 and Black
+t = Kit and Black
+y = Kat and Black
+u = KatEnd and Black
+i = BlackWall
+
+(Aliases)
+Cookie = Cookie1 or Cookie2
+Baked = Baked1 or Baked2
+Player = PlayerL or PlayerR or KatEnd
+MainPlayer = PlayerL or PlayerR
+
+=======
+SOUNDS
+=======
+
+Cookie MOVE 36772507 
+Baked CREATE 20422303
+startgame 63795503
+Kat MOVE 79750703
+
+================
+COLLISIONLAYERS
+================
+
+Background
+Black
+Player, Wall, BlackWall, Cookie, Baked
+PanLeft,PanRight,Kit,Kat
+
+======
+RULES
+======
+
+[Left PlayerR ] -> [Left PlayerL]
+[Right PlayerL ] -> [Right PlayerR]
+
+[ >  Player | Cookie ] -> [  >  Player | > Cookie  ]
+
+[ Left KatEnd ] -> [Left Kat]
+
+late [ Cookie1 | Cookie1 | Cookie1 | Cookie1 | Cookie1] -> [ Baked1 | Baked1 | Baked1 | Baked1 | Baked1]
+late [ Cookie2 | Cookie2 | Cookie2 | Cookie2 | Cookie2] -> [ Baked2 | Baked2 | Baked2 | Baked2 | Baked2]
+
+late [ Cookie1 | Cookie1 | Cookie1 | Cookie1 ] -> [ Baked1 | Baked1 | Baked1 | Baked1]
+late [ Cookie2 | Cookie2 | Cookie2 | Cookie2 ] -> [ Baked2 | Baked2 | Baked2 | Baked2]
+
+late [ Cookie1 | Cookie1 | Cookie1 ] -> [ Baked1 | Baked1 | Baked1 ]
+late [ Cookie2 | Cookie2 | Cookie2 ] -> [ Baked2 | Baked2 | Baked2 ]
+
+==============
+WINCONDITIONS
+==============
+
+no Cookie 
+no KatEnd
+
+=======
+LEVELS
+=======
+
+message "I haven't made cookies in ages... Let's check my copy of 'Woodland Fairy's Guide to Baking.'"
+message "Okay, it says I need to line up three blobs of dough in a row on the pan to bake them."
+
+############
+#L.....q..R#
+#L.*.*qq..R#
+#L...p.q..R#
+#L...*....R#
+#Lqq......R#
+############
+
+############
+#l........r#
+#l.qqq.q*qr#
+#l.*.p....r#
+#lq*......r#
+#l.qqq.qq.r#
+############
+
+message "'Line up chocolate chip with chocolate chip and sugar cookies with other sugar cookies.'"
+message "Kat loves both... I want plenty of each for our date!"
+
+############
+#Lq&q..wq.R#
+#Lw..*.q.wR#
+#Lw&.p.*qqR#
+#L.q.&..w.R#
+#L.w..q*qwR#
+############
+
+############
+#l..q&....r#
+#l.*..ww..r#
+#l.&.p.&*.r#
+#l..q.....r#
+#l..*.qqwqr#
+############
+
+message "Four pans down. Only four to go!"
+
+############
+#l.qwqqwq.r#
+#lw.......r#
+#lq.qpw.q.r#
+#lq**&&*&.r#
+#lw.......r#
+############
+
+############
+#l..*...*.r#
+#l*..*.&..r#
+#l..&p....r#
+#l&..&.&*.r#
+#l.*.....&r#
+############
+
+message "Two pans left! Then it's time for our date!"
+
+############
+#lq......qr#
+#lw.&w*q&.r#
+#lq..p....r#
+#lw.*q&w*.r#
+#lq......qr#
+############
+
+############
+#l.&..q.*.r#
+#l.*.*&.&.r#
+#l...p....r#
+#l.*.&*.&.r#
+#l.&.w..*.r#
+############
+
+message "Did you make all these cookies for me, Kit?"
+
+,mn,n,m,n,n,
+n,,m,n,m,m,n
+,mm,,,,,n,,m
+m,,,t,y,,,m,
+,,m,,,,,n,m,
+nm,,m,m,m,,n
+,m,m,n,n,nm,
+
+message "Heh heh, yeah. I hope you like them, Kat."
+message "I love them. But you know, the sweetest treat of all..."
+
+,mn,n,m,n,n,
+n,,m,n,m,m,n
+,mm,,,i,n,,m
+m,,,t,ui,,m,
+,,m,,,i,n,m,
+nm,,m,m,m,,n
+,m,m,n,n,nm,
+
+message "...is you!"
