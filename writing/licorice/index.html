@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Licorice Recoil</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style_shop.css">
+<script src="js/script.js"></script>
+</head>
+
+<!-- I do a lot of weird CSS and Javascript in here, it's basically
+all so I can keep music playing continuously from page to page. If 
+I didn't want that, it'd be easy to just have a bunch of individual
+HTML pages with their own formatting.
+
+Essentially I use onclick Javascript functions to selectively hide 
+and show divs, change out CSS stylesheets (for the backgrounds and
+fonts, and stop/start the music. You can see the functions in the js
+folder and stylesheets in the css folder.
+
+It's definitely a bit tricky, but I figured it all out with some 
+googling. I'm sure there are simpler, more elegant ways to handle it,
+but this works for me. Please feel free to use this as a template for 
+making your own stuff! --> 
+
+<body class="main">
+
+<audio controls loop id="gymnopedie">
+  <source src="music/gymnopedie.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls loop id="fascism">
+  <source src="music/fascism.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls loop id="g_doll">
+  <source src="music/g_doll.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls loop id="warm">
+  <source src="music/warm.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls loop id="dancers6">
+  <source src="music/dancers6.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls loop id="gymnopedie2">
+  <source src="music/gymnopedie2.mp3" type="audio/mpeg">
+</audio>
+
+<div id="title" style="text-align:center;">
+<br />
+<img src="images/title.png" alt="Licorice Recoil">
+
+<p style="font-size:24px">A story by John Thyer.</p><br />
+
+<div class="fakeLink" onClick="p_main('title','p1','style_shop.css');
+    play_song('gymnopedie');show_footer();"><b>&rarr;</b></div><br />
+</div>
+
+
+<div id="p1">
+<br />
+<img src="images/shop1.png" alt="Takina running her shop.">
+<br />
+
+<p>"Do you have anything besides black licorice?" he asks.</p>
+
+<p>It’s just licorice, not "black" licorice.</p>
+
+<p>I respond flatly. "No." I take a sip of my coffee.</p>
+
+<p>His eyes pass over the "No Samples" sign behind the counter. "What’s the smallest serving you sell?"</p>
+
+<p>I grab a one pound bag from behind me and plop it on the counter. "Two silvers."</p>
+
+<p>His eyes open wide. "For that price, it must be delicious."</p>
+
+<p>"It’s the best you’ll ever taste," I say.</p>
+
+<p>He shrugs, takes two silver-gilded coins out of his pocket, and drops them on the table. "Let’s give it a shot. I loved black licorice when I was a kid."</p>
+
+<p>Stop calling it that. It’s just licorice.</p>
+
+<p>I push the bag towards him. He unties it, pulls out a piece of candy, and bites down on it.</p>
+
+<p>He tries to be subtle. But I can see it. His face scrunching up. The <i>recoil</i> backward, away from the bag. It’s too much for him.</p>
+
+<p>"Wow, it’s... quite strong," he says.</p>
+
+<p>I squint at him. "No refunds."</p>
+
+<p>"No, it’s very good! It’s just more than I was expecting."</p>
+
+<p>I cross my arms and lean back in my chair, not replying.</p>
+
+<p>The old man scratches his head. "Well. Good afternoon, then."</p>
+
+<p>The bell attached to the shop’s door jingles as the man leaves. I stare at him through the small triangular window on the door.</p>
+
+<p>He thinks I can’t see him as he tosses the bag of candy into a nearby trash can.</p>
+
+<p>Whatever.</p>
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('p1','title','style_shop.css');
+    stop_song('gymnopedie');hide_footer();"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('p1','p2','style_shop.css')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="p2">
+<br />
+<img src="images/meeting.png" alt="A blonde girl in red walks in.">
+<br />
+<p>I eye the clock. Almost closing time. Two sales today. More than usual.</p>
+
+<p>The bell rings.</p>
+
+<p>A girl walks into my shop. She has bright blond hair that shimmers even in the room's dim light. A red ribbon's tied on the left side of her face. Her red shirt matches the ribbon.</p>
+
+<p>"Hi there!" she says, grinning.</p>
+
+<p>I murmur a response. "Welcome."</p>
+
+<p>"I’ve walked by this store a hundred times, but I’ve never come in. You sell licorice, right?"</p>
+
+<p>Did the sign out front that says "Takina’s Licorice Shop" clue you in?</p>
+
+<p>She walks up to the front counter and eyes the shelves of candy behind me, squinting in the faint light. The meager windows here didn't allow in much sun, and I couldn't afford to burn candles all day.</p>
+
+<p>"Do you make it yourself?"</p>
+
+<p>"Yes. I have a kitchen in the back. I make it fresh in-shop."</p>
+
+<p>"That’s amazing!" She grins again. "You opened last year right? How long have you been making licorice?"</p>
+
+<p>Why is she asking so many questions? "Since I was a kid."</p>
+
+<p>"Wow. Not many artisanal licorice shops out there!"</p>
+
+<p>A strange impulse comes over me. "Would you... like a sample?"</p>
+
+<p>Her eyes flicker to the sign behind me. She moves a bit of hair out of her face, smiling softly. "I’d love one."</p>
+
+<p>I untie one of the one pound bags. She cups her hands over the counter. I shake a couple pieces into them.</p>
+
+<p>Her lips part. She takes a bite out of the bitter candy. I flinch, expecting her to <i>recoil</i>.</p>
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('p2','p1','style_shop.css')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('p2','p3','style_sky.css')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="p3">
+<br />
+<img src="images/chisato1.png" alt="Close-up of the girl's face.">
+<br />
+<p>"This is incredible."</p>
+
+<p>What?</p>
+
+<p>She takes another bite of the candy.</p>
+
+<p>"This is the best licorice I’ve ever tasted. It’s strong of course, but it’s subtle too."</p>
+
+<p>Correct. That’s what makes licorice so delicious. It’s not just bitter, it’s–</p>
+
+<p>"It’s sweet, it’s salty, it’s sour. There’s so much going on underneath the bitterness. You balanced it all perfectly. I can tell you experimented with a lot of different ingredients and flavor ratios."</p>
+
+<p>No one’s ever reacted this way to my candy before.</p>
+
+<p>"How much for two of these bags?"</p>
+
+<p>My mouth is dry. "Um. Eight coppers." I take two bags off the shelf behind me and put them on the counter.</p>
+
+<p>"Wow, that’s a steal!" She finishes the last bite of her sample. Then she looks around the shop, at the bare wooden walls and empty shelves, lit feebly by small windows.</p>
+
+<p>"Have you ever thought about selling red licorice too?"</p>
+
+<p>What.</p>
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('p3','p2','style_shop.css')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('p3','p4','style_black.css');
+  stop_song('gymnopedie');play_song('fascism');"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="p4">
+<br />
+<img src="images/angry.png" alt="Close-up of Takina's angry face.">
+<br />
+<p>An all-too-familiar indignant heat burns inside me. </p>
+
+<p>"Do you know what licorice is made out of, Miss?"</p>
+
+<p>She pauses for a moment, the ingrate.</p>
+
+<p>"Well, licorice root, right? And some sugar, I guess? My name’s Chisato by the way." She takes another bite out of my candy.</p>
+
+<p>I nod. "Licorice root, sugar, and something to bind them together. I use flour." Plus a few other ingredients to add to the depth of flavor. In my personal recipe, anyway. "Now, Miss Chisato, tell me this..."</p>
+
+<p>I lean in closer to her, over the counter. I speak in a whisper.</p>
+
+<p>"What do you think red licorice is made out of?"</p>
+
+<p>She pauses again. "I mean, the same ingredients right? Plus some extra sugar and food coloring?"</p>
+
+<p>"Wrong!" I snap back. Chisato <i>recoils</i> from me.</p>
+
+<p>"Red licorice doesn’t contain any licorice root <i>at all</i>. It’s just a sugary treat designed to have the same shape as <i>real</i> licorice."</p>
+
+<p>I leaned back, satisfied I’d made my point. Really, to come into my store and ask me to make <i>fake</i> licorice.</p>
+
+<p>The girl cocks her head. "So? If it tastes good, why does it matter?"</p>
+
+<p>My eyes go wide with anger. It’s the principle of it, obviously!</p>
+
+<p>"People like balancing bitter flavors with sweet ones. If you had some red licorice here, I think people would appreciate your black licorice even more."</p>
+
+<p>Stop calling it "black" licorice! </p>
+
+<p>I can’t even muster a response. Chisato smiles, seemingly unaware of my righteous indignation. "Just an idea." </p>
+
+<p>Then she puts eight copper coins on the counter, grabs her two bags of candy, and leaves the shop.</p>
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('p4','p3','style_sky.css');
+  stop_song('fascism');play_song('gymnopedie')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('p4','p5','style_shop.css');
+  stop_song('fascism');play_song('g_doll');"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="p5">
+<br />
+<img src="images/friends.png" alt="Chisato and two friends arrive at the shop.">
+<br />
+<p>The bell rings. My stomach sinks as the blonde girl from a week ago walks in. What was her name again? Cheesa?</p>
+
+<p>She has two friends with her. They look friendly enough. They're awfully pretty, almost as pretty as Chorizo. I sip at my morning coffee.</p>
+
+<p>"This is the shop you got that licorice from, Chisato?" one of them asks. She takes a swig out of a paper cup in her hand.</p>
+
+<p>"Sure is, Mei! Hey there, Takina!"</p>
+
+<p>"Welcome." The word is icy cold on my tongue.</p>
+
+<p>Chisato and her friends chat away as they ordered several bags of licorice. Apparently she’d shared the candy with a number of friends. It was too strong for most of them, but these two loved it.</p>
+
+<p>The two friends pay for the order and walk out, still yapping at each other.</p>
+
+<p>Chisato stays behind. She eyes my drink. "Do you like coffee?"</p>
+
+<p>I nod. I love coffee. </p>
+
+<p>"I know a café near here that’s really good. Do you wanna go together sometime?"</p>
+
+<p>Every café coffee I’ve ever tried has disappointed me. My own coffee isn’t up to the same standard as my licorice, but it’s still the product of years of practice and trial and error. Others never seem to measure up.</p>
+
+<p>"Sure," I say inexplicably.</p>
+
+<p>"Does tomorrow morning at 11 work for you?"</p>
+
+<p>"That works. I can close up the shop for an hour or so."</p>
+
+<p>"Perfect. It’s a date!"</p>
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('p5','p4','style_black.css');
+  stop_song('g_doll');play_song('fascism')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('p5','p6','style_coffee.css')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="p6">
+<br />
+<img src="images/coffee1.png" alt="Takina and Chisato drinking coffee at a cafe together.">
+<br />
+<p>We’ve only been walking for ten minutes, but I already don’t recognize the street we’re on. The crisp autumn air is refreshing. I didn’t realize how much I’d stayed cooped up inside lately.</p>
+
+<p>"There are so many good shops around here! I love finding a new one and trying it out."</p>
+
+<p>Chisato’s wearing a red turtleneck and a long blue skirt with black leggings. The color coordination is obnoxiously perfect, like every outfit I’ve seen her in.</p>
+
+<p>We arrive at the café. The building’s made of brick, accented everywhere with dark oak trim. Chisato leads me inside, and follows a waiter to our seats. The wood table matches the molding along the walls and ceiling.</p>
+
+<p>"I love coming here when it’s getting cooler. It’s so cozy."</p>
+
+<p>I eye her as she uncurls her scarf and puts it on the seat next to her. "Do you get cold easily?"</p>
+
+<p>"Yeah, I’m a summer girl. I love hot drinks this time of year though."</p>
+
+<p>I’m inside most of the time, so I don’t pay much attention to the change in seasons.</p>
+
+<p>The waiter arrives to take our order.</p>
+
+<p>"What’s the sweet one with the steamed milk and spices?" asks Chisato.</p>
+
+<p>The waiter replies with an incomprehensible string of words, none of which I recognize except "espresso."</p>
+
+<p>"Yes, that’s the one!" says Chisato.</p>
+
+<p>The waiter turns to me. I shrug. "I’ll have a black coffee."</p>
+
+<p>We make more small talk. Our drinks arrive. Mine’s a bit flat. They overroasted the beans.</p>
+
+<p>Chisato takes a gulp of her drink. I can <i>see</i> the waves of pleasure pass through her body.</p>
+
+<p>"That good, huh?"</p>
+
+<p>"Yeah, I love this place. Do you want to try it?"</p>
+
+<p>I open my mouth to tell her no. "Sure." She passes me the cup. I look at the frothy surface of the drink, covered in spices and red peppermint.</p>
+
+<p>I take a sip.</p>
+
+<p>Hm. </p>
+
+<p>"Not bad. The cinnamon adds a lot."</p>
+
+<p>"Right? I’ve gone through their whole menu over the last year. This is my favorite drink of theirs."</p>
+
+<p>I give her back her drink after taking another sip. I wash the sweetness down with another swig of my black coffee.</p>
+
+<p>We continue sipping at our drinks. Chisato tells me about her job. </p>
+
+<p>"It sounds stressful."</p>
+
+<p>"Yeah, I guess it is a lot sometimes. Visiting places like this on my days off helps though. Especially when I can bring new friends!" She smiles wide, then downs the last gulp of her drink.</p>
+
+<p>New friend, huh?</p>
+
+<p>"Are there any other cafés around here that you like?" I ask. "I’d be up for trying more."</p>
+
+<p>"Yeah! There’s this one just a few blocks away I also really like."</p>
+
+<p>Maybe I’ll ask for her menu recommendation next time.</p>
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('p6','p5','style_shop.css')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('p6','p7','style_black.css')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="p7">
+<br />
+<img src="images/red1.png" alt="Takina getting frustrated in the kitchen.">
+<br />
+<p>I watch the layer of red paste cool in the pan. It’s my third batch of the night. Surely this one will turn out okay. I quickly down another cup of stale coffee.</p>
+
+<p>The candy finally solidifies. I slice in my knife and cut out a small square piece.</p>
+
+<p>I exhale deeply, and take a bite.</p>
+
+<p>I immediately spit it out. It lands on the floor with a splat, right next to two other red globs. I grind my teeth in frustration.</p> 
+
+<p>I pick up the bag of a competitor candy store’s red licorice and eat another piece out of it.</p>
+
+<p>It’s awful. It’s far too sweet. The red color obviously comes from artificial flavorings and dyes. It tastes like it was concocted in the lab of a particularly unskilled alchemist, not a chef’s kitchen.</p>
+
+<p>And it’s better than mine. Intolerable.</p>
+
+<p>I take a sip of my drink. Whatever. A failed experiment. I’ll just stick with making real licorice. That’s what I do best. Chisato doesn’t have to know about it.</p>
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('p7','p6','style_coffee.css')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('p7','p8','style_shop.css');
+  stop_song('g_doll');play_song('warm')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="p8">
+<br />
+<img src="images/birthday.png" alt="A bag of candy with a pretty ribbon and a card next to it.">
+<br />
+<p>A couple of strangers walk into the shop, two boys. "This is the shop Mei mentioned, right?" the taller one says.</p>
+
+<p>"It's awfully dark in here," the shorter one says.</p>
+
+<p>I greet them with a salesgirl smile, and offer them each a free piece of candy. I’d taken down the No Samples sign last week. </p>
+
+<p>They take a bite. Both of them <i>recoil</i>.</p>
+
+<p>"This isn’t really my thing," the shorter one says, after recovering. "But don’t you think Dad would like it?" </p>
+
+<p>I finally notice how similar the two boys look. They must be brothers.</p>
+
+<p>"Oh yeah," the other replies. "Before we moved here, he always loved that super-strong black licorice from Anne’s store."</p>
+
+<p>It’s just– oh, whatever.</p>
+
+<p>They wound up ordering a bag. They asked if I could gift-wrap it for them. I found a pretty ribbon in the back and tied it around the bag. Then I got some paper and folded it. One of the boys wrote "Happy Birthday Dad!" on the card and affixed it to the bag.</p>
+
+<p>"Thanks!" they both say as they leave.</p>
+
+<p>The door closes behind them. The bell sways and then stops. "I hope he likes it," I say to myself.</p>
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('p8','p7','style_black.css');
+    stop_song('warm');play_song('g_doll')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('p8','p9','style_sky.css')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="p9">
+<br />
+<img src="images/giraffe.png" alt="A close-up of a giraffe's face.">
+<br />
+<p>I’d known abstractly what giraffes were, but I wasn’t prepared for how tall they really are. I look out into the enclosure as the animal chews on leaves from a tall tree. </p>
+
+<p>Chisato and Erica are standing next to me, staring at the giraffe. Mei is off getting some snacks at a stall nearby. It’s unseasonably warm today. Chisato’s wearing a flowy red dress.</p>
+
+<p>"I knew the zoo came to town sometimes," says Erica. "But I’ve just never visited for some reason."</p>
+
+<p>"Isn’t it cool? Let’s check out the lions next." says Chisato, grinning.</p>
+
+<p>I’d never seen lions before either.</p>
+
+<p>Mei arrives back with our snacks. She got us cold water, fried potatoes, and a bag of red licorice. </p>
+
+<p>The candy is thoroughly mediocre. It still tastes good, somehow.</p>
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('p9','p8','style_shop.css')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('p9','p10','style_shop.css')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="p10">
+<br />
+<img src="images/sample.png" alt="A kettle of coffee next to a plate of sample black licorice pieces.">
+<br />
+<p>A customer samples the licorice. Her face crinkles; she shakes her head. </p>
+
+<p>The man with her laughs. "Still not for you, huh?" He buys a bag for himself. "I’m so glad the boys found this place. I haven’t had good licorice like this since the move. I need to tell Jeremy at work about it."</p>
+
+<p>I smile back and accept his coins. I’ve never made this many sales in a month before. </p>
+
+<p>I notice the woman has dark circles under her eyes. Before they leave, I ask her if she’d like a complimentary cup of coffee.</p>
+
+<p>She lights up. "I’d love one actually."</p>
+
+<p>I pour her some coffee out of the kettle behind me into a small paper cup. She takes a sip.</p>
+
+<p>"This is very good," she says with surprising emphasis.</p>
+
+<p>I smile. "I’m considering selling it."</p>
+
+<p>"That’s a wonderful idea. There aren’t any other cafés on this street after all."</p>
+
+<p>"And people love having coffee with sweets," the man added.</p>
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('p10','p9','style_sky.css')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('p10','p11','style_coffee.css');"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="p11">
+<br />
+<img src="images/coffee2.png" alt="Chisato at a cafe with Takina. Chisato looks pensive.">
+<br />
+<p>I’m on my fourth one-on-one date with Chisato. She’s wearing the same red top and ribbon she had on when we first met.</p>
+
+<p>We’re at another new-to-me café. This one doubles as a bakery, and it has colorful murals painted everywhere as decoration. I like the one near our table, a loose and abstract depiction of the sun shining over a wide grass field.</p>
+
+<p>"I really want to try the strawberry muffins," I say to Chisato, pointing at a spot on the menu.</p>
+
+<p>She doesn’t reply. She’s wearing a far off stare. She’s been quiet for the past few minutes.</p>
+
+<p>"Chisato, is something wrong?"</p>
+
+<p>Her eyes drift back to me. "What? Oh yeah, the muffins are really good."</p>
+
+<p>I furrow my brow at her. "Is something wrong?" I repeat.</p>
+
+<p>She’s silent for a few moments. "Just more stuff at work. They let go of some of my coworkers, and now they’re leaning on me more."</p>
+
+<p>"That’s really rough."</p>
+
+<p>"Yeah, it is. It should pass soon though, once they hire more people."</p>
+
+<p>She’s smiling now. But it looks pained and forced.</p>
+
+<p>"I hope it passes soon."</p>
+
+<p>I didn’t know what else to say. I want to help her smile again. Her real smile.</p>
+
+<p>Hm.</p>
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('p11','p10','style_shop.css')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('p11','p12','style_shop.css')
+  stop_song('warm');play_song('dancers6')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="p12">
+<br />
+<img src="images/red2.png" alt="Takina preparing a bag of candy with a pretty red ribbon.">
+<br />
+<p>A couple customers sit at the tables I set up, both enjoying their coffee. Today is my first day offering it. It’s my first time selling something besides black licorice. I try to avoid nodding off behind the counter. </p>
+
+<p>The bell rings. I perk up immmediately as Chisato walks in. She’s wearing her usual grin. It’s a stark contrast with her dark mood from our last date.</p>
+
+<p>She notices the thick bags under my eyes as she walks up. "Takina, you look exhausted!" </p>
+
+<p>"I’ve been working on a project."</p>
+
+<p>"Is that why the store’s been closed?"</p>
+
+<p>"Erm, maybe." I’d been in the kitchen night and day for almost a week. "How are things with work?"</p>
+
+<p>"Eh, same old, same old," she says, rolling her eyes. Her smile fades, just a bit. Not enough that most people would notice.</p>
+
+<p>I take a deep breath.</p>
+
+<p>"Chisato... I’ve been working on a new candy. Can you try it out for me?"</p>
+
+<p>Her eyes widen.</p>
+
+<p>I grab a bag from behind the counter and put it in front of her.</p>
+
+<p>A voice in my head screams that I’m making a mistake, that I’m betraying myself in some crucial way. I ignore it.</p>
+
+<p>She opens the bag and gasps. "You made red licorice." She pulls a piece out of the bag.</p>
+
+<p>I nod, my breath hitching in my throat. What if she doesn’t like it? What if she <i>recoils</i>?</p>
+
+<p>She takes a bite.</p>
+
+<p>Her eyes are closed. I can’t read her reaction as she chews, but I know she’s focusing intensely. She takes another bite.</p>
+
+<p>Her brow furrows. She swallows. "Can you give me some black licorice?"</p>
+
+<p>I quickly put another bag on the table. She opens it and takes a bite of the black candy. Then she eats the rest of the red licorice piece.</p>
+
+<p>She takes another bite out of each bag. Then another. Her pace accelerates.</p>
+
+<p>In the less then a minute, she shovels almost a dozen pieces of red and black candy down her gullet. </p>
+
+<p>She looks up at me, panting, stars in her eyes.</p>
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('p12','p11','style_coffee.css');
+  stop_song('dancers6');play_song('warm')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('p12','p13','style_sky.css')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="p13">
+<br />
+<img src="images/chisato2.png" alt="Close-up of Chisato's shining face.">
+<br />
+
+<p>"These are <i>delicious</i>, Takina." She swallows another red candy. "Is there real strawberry in this?"</p>
+
+<p>"Yeah. It was hard to make it behave as an ingredient actually. It’s as tricky as licorice root, in its own way."</p>
+
+<p>I watch the slight bulge of another piece of licorice travel down her throat. "You seemed really against the idea of red licorice. That’s why I didn’t bring it up again after my first visit. What changed?"</p>
+
+<p>She’s smiling widely again. I can’t help but grin in return. </p>
+
+<p>You came into my life, Chisato. That’s what changed.</p>
+
+<p>I shrug. "Does it matter? It tastes good, right?"</p>
+
+<p>She nods fervently. "You have to sell these," she says, shoving more pieces of red and black licorice in her mouth.</p>
+
+<p>"I’m considering it."</p>
+
+<p>She blinks, then freezes in horror. "I’m sorry, I ate so much! How much for these?"</p>
+
+<p>"The red licorice is on the house. Your feedback as my first flavor tester was invaluable." I smirk. "Your regular order is still eight coppers though."</p>
+
+<p>She puts the coins on the table, already chewing on another mouthful of candy.</p>
+
+<p>I lean back in my chair behind the counter. "By the way, did you still want to go the museum tomorrow? Noon works for me."</p>
+
+<p>"Yup, that works for me too!"</p>
+
+<p>"Alright," I reply. "It’s a date."</p>
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('p13','p12','style_shop.css')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('p13','int1','style_sky.css')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="int1">
+<br />
+<img src="images/shop3.png" alt="Takina running her shop. There's a plate of samples and a kettle of coffee.">
+<br />
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('int1','p13','style_sky.css')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('int1','int2','style_sky.css')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="int2">
+<br />
+<img src="images/shop4.png" alt="Takina running her shop. There's red licorice on display for sale.">
+<br />
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('int2','int1','style_sky.css')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('int2','int3','style_sky.css')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="int3">
+<br />
+<img src="images/shop5.png" alt="Takina running her shop. Black, red, and green candies are on display.">
+<br />
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('int3','int2','style_sky.css')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('int3','int4','style_sky.css')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="int4">
+<br />
+<img src="images/shop6.png" alt="Takina running her shop. The light is brighter now.">
+<br />
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('int4','int3','style_sky.css')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('int4','int5','style_sky.css')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="int5">
+<br />
+<img src="images/shop7.png" alt="Takina running her shop. She's selling black, red, green, and blue candies.">
+<br />
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('int5','int4','style_sky.css')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('int5','p_end','style_shop.css');
+  stop_song('dancers6');play_song('gymnopedie2')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="p_end">
+<br />
+<img src="images/shop8.png" alt="Takina running her shop. There are pretty flowers added to the candy displays.">
+<br />
+<p>I flutter around the shop, setting up merchandise on the new displays. I still haven’t swept the floors or wiped down the tables. I look at the clock. There’s far too much to do in the mornings now.</p>
+
+<p>I pause, looking around the shop. I barely recognize it from what it looked like six months ago. </p>
+
+<p>I used some of the new profits to get bigger windows. There’s a lot more light in here now. </p>
+
+<p>The candy shelves are a rainbow of different confections. I added the gumdrops just a month after the strawberry licorice. The caramels and lollipops came after that. </p>
+
+<p>Just recently, I added blueberry licorice to the menu. That one was a real challenge to figure out. </p>
+
+<p>The black licorice still gets displayed front and center, of course.</p>
+
+<p>I check the coffee kettle behind the counter. I confirm that it’s brewed just right. There’s a million things to do, but I can’t ignore the time. I wish I had some help.</p>
+
+<p>I change the closed sign to open, and walk around the half-dozen tables I’ve set up to accommodate my morning regulars. </p>
+
+<p>The bell barely jingles as the door cracks open. Chisato meanders into the shop, looking more sullen then I’ve ever seen her. She sits down at one of the tables.</p>
+
+<p>Chisato’s job has only gotten more intolerable in the last few months. I figure this has something to do with that. I pour her a cup of coffee and grab a few sweets off the shelf.</p>
+
+<p>I sit down with her. "What’s up?"</p>
+
+<p>Chisato slowly unwraps one of the caramels, sets the candy on the table, and fiddles with the paper wrapping. "I quit," she replies. </p>
+
+<p>"What?"</p>
+
+<p>"I quit my job last night." Her voice is quiet. "It was a mistake. I was just being impulsive and stupid. Like always." She sips her coffee, then goes back to folding and unfolding the paper.</p>
+
+<p>"You’re not stupid," I murmur.</p>
+
+<p>She doesn’t reply.</p>
+
+<p>"Do you... have something else lined up?" I ask.</p>
+
+<p>Chisato tears the paper in half. "No. I don’t." </p>
+
+<p>"Do you know what you want to do?"</p>
+
+<p>"Something else. Anything besides what I’ve been doing."</p>
+
+<p>She takes another swig of coffee. We sit in silence for a few minutes. I stare at the red ribbon in her hair.</p>
+
+<p>An idea forms. Before I have time to think about it, the words spill out of my mouth. "Do you want to work here?"</p>
+
+<p>The paper falls out of Chisato’s hands. She slowly looks at me.</p>
+
+<p>"I need help." I gulp, suddenly nervous. I’m expecting her to flinch, to <i>recoil</i> from me. "With all the new menu items, I can’t keep on top of all the shop work. And there’s way more because of the new foot traffic."</p>
+
+<p>She cocks her head. "Is this something you've already been thinking about?"</p>
+
+<p>"Yeah. I've been wanting to hire someone on. I've got the funds for it thanks to all the new sales. I planned to start looking next week."</p>
+
+<p>Chisato is silent. I can't tell what she's thinking.</p>
+
+<p>"It's still a candy store. You wouldn't make as much as your old job. But if that sounds at all appealing to you, I'd rather hire you then a stranger." I scratch my head.</p>
+
+<p>"I really could work at your shop?" Chisato asks. There's an odd crack in her voice. </p>
+
+<p>I nod.</p>
+
+<p>"Could... I learn how to make candy with you?" Her eyes are watering. I've never seen her like this. Did I say something wrong?</p>
+
+<p>My face feels hot. I look at the ceiling. "Yeah, why not? I could use some help in the kitchen too."</p>
+
+<p>Chisato bursts out of her chair and wraps her arms around me.</p>
+
+<p>I don’t know what to do with my arms. I awkwardly hug her back, not knowing what to say.</p>
+
+<p>She just blubbers into my shoulder. "I’d love that so much. Your candy makes me happy. You make me so happy, Takina."</p>
+
+<p>She pulls me into a tighter, warmer embrace. "I promise I’ll do a good job. Thank you." I hug her back as best as I can.</p>
+
+<p>Chisato pulls her arms away and stands up, wiping her tears with her sleeve. I pick the caramel off the table and offer it to her. She takes the candy, and suddenly pushes it into my mouth. I almost gag in surprise. We both start laughing.</p>
+
+<p>It takes us a minute to calm down. The caramel tastes delicious.</p>
+
+<p>Then she takes my hands in hers, grinning. "When can I start?"</p>
+
+<table><tr>
+<td class="fakeLink" onClick="p_main('p_end','int5','style_sky.css');
+    stop_song('gymnopedie2');play_song('dancers6')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('p_end','p_end2','style_shop.css')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="p_end2">
+<br />
+<img src="images/smiles.png" alt="Takina and Chisato holding hands and smiling.">
+<br />
+<table><tr>
+<td class="fakeLink" onClick="p_main('p_end2','p_end','style_shop.css')"><b>&larr;</b></td>
+<td class="fakeLink" onClick="p_main('p_end2','p_end3','style_shop.css')"><b>&rarr;</b></td>
+</tr></table>
+</div>
+
+
+<div id="p_end3">
+<br />
+<img src="images/theend.png" alt="The End">
+<br />
+<table><tr>
+<td class="fakeLink" onClick="p_main('p_end3','p_end2','style_shop.css')"><b>&larr;</b></td>
+<td>&nbsp;&nbsp;</td>
+<td class="fakeLink" style="font-size:36px;vertical-align:bottom;text-align:right" 
+    onClick="p_main('p_end3','p_credits','style_shop.css')">Credits</td>
+</tr></table>
+</div>
+
+
+<div id="p_credits" style="text-align:center">
+<br />
+
+<p style="font-size:32px;">
+&hearts;<span style="color:#d04648;"> &hearts;</span> 
+&hearts;<span style="color:#d04648;"> &hearts;</span> 
+&hearts;<span style="color:#d04648;"> &hearts;</span> 
+&hearts;<span style="color:#d04648;"> &hearts;</span> 
+&hearts;
+</p> 
+
+<p style="font-size:28px"><b>Licorice Recoil</b></p>
+
+<p style="font-size:24px">A story by John Thyer.</p>
+
+<p>Portrait art by John Thyer, made with Increpare's <a href="https://www.flickgame.org/" target="_blank">Flickgame</a>.</p>
+
+<p>Gymnopedie MIDI arrangements by <a href="http://www-personal.umich.edu/~bbowman/midi/satie/" target="_blank">David Cooke</a>.</p>
+
+<p>Other tracks by Koji Kusanagi, available on <a href="http://k2works.com/nerve/" target="_blank">k2works</a>. Tracks used are Fascism, Warm, G_Doll, and Dancers6.</p>
+
+<p>Background clipart from istock.com and vectorstock.com.</p>
+
+<p>MIDI to MP3 conversion by <a href="https://twitter.com/SuperNerdZeLoz" target="_blank">Zeloz mk.ii</a>.</p>
+
+<p>Based on characters from the anime <i>Lycoris Recoil</i> by A-1 Pictures, presumably loosely.</p>
+
+<p>Thanks to Zeloz, Deb, Rhete, and Saori for test-reading &hearts; </p>
+
+<p style="font-size:32px;">
+&hearts;<span style="color:#d04648;"> &hearts;</span> 
+&hearts;<span style="color:#d04648;"> &hearts;</span> 
+&hearts;<span style="color:#d04648;"> &hearts;</span> 
+&hearts;<span style="color:#d04648;"> &hearts;</span> 
+&hearts;
+</p> 
+
+<div class="fakeLink" onClick="p_main('p_credits','p_end3','style_shop.css')"><b>&larr;</b></div>
+</div>
+
+
+<div id="footer">
+<br /><br />
+<a href="index.html" style="display: block; text-align:center;">&larr; Back to Start</a>
+<br />
+</div>
+
+</body>
+</html>
