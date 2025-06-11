@@ -38,12 +38,15 @@
      margin: 20px;
 }
  @media (max-width: 516px) {
-     img {
-         max-width: 90%;
+    body {
+        font-size: 20px;
+    }
+    img {
+        max-width: 90%;
     }
 }
  @media (max-width: 656px) {
-     img {
-         max-width: 100%;
+    img {
+        max-width: 100%;
     }
 }
