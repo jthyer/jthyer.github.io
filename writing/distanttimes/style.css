@@ -1,0 +1,35 @@
+body {
+     font-family: Arial;
+     max-width: 800px;
+     margin: auto;
+     line-height: 1.5;
+     background-color: #cccccc;
+     padding:20px;
+     display:block;
+     overflow-y:scroll;
+}
+a {
+     color: #9e3809;
+	 text-decoration-style: dotted;
+	 font-weight: bold;
+}
+a:hover {
+	 text-decoration-style: solid;
+}
+h2 {
+	 display: inline;
+}
+
+#header {
+	 scroll-margin-top: 36px;
+}
+
+#hide-on-desktop {
+	display: none;
+}
+
+@media (max-width: 600px) {	
+	#hide-on-desktop {
+		display: inline;
+	}
+}
